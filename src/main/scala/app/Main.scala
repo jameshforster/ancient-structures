@@ -10,8 +10,8 @@ import net.minecraftforge.fml.common.event.{FMLInitializationEvent, FMLPostIniti
 @Mod(modid = Main.modId, name = Main.modName, version = Main.version)
 object Main {
 
-  val modId = "Ancient-Structures"
-  val modName = "Ancient-Structures"
+  val modId = "ancientStructures"
+  val modName = "Ancient Structures"
   val version = "0.1.0"
 
   @SidedProxy(clientSide = "app.ClientProxy", serverSide = "app.ServerProxy")

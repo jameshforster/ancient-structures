@@ -1,12 +1,15 @@
 package app
 
+import app.blocks.ModBlocks
 import net.minecraftforge.fml.common.event.{FMLInitializationEvent, FMLPostInitializationEvent, FMLPreInitializationEvent}
 
 /**
   * Created by james-forster on 03/07/17.
   */
 trait Proxy {
-  def preInit(e: FMLPreInitializationEvent): Unit
+  def preInit(e: FMLPreInitializationEvent): Unit = {
+    ModBlocks.createBlocks()
+  }
   def init(e: FMLInitializationEvent): Unit
   def postInit(e: FMLPostInitializationEvent): Unit
 }
